@@ -1,0 +1,19 @@
+<h1>Movies</h1>
+
+<div>{{movies.page}}</div>
+
+<div *ngFor="let movie of movies.results">
+    <label>{{movie.title}}</label>
+</div>
+
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let movie of movies.results">
+      <div class="wrapper">
+        <img [src]="imgUrl+movie.backdrop_path" class="img_carrusel" alt="{{movie.title}}">
+      </div>
+      <div class="carousel-caption div_carrusel">
+        <h1>{{movie.title}}</h1>
+        <p> {{movie.overview}} </p>
+      </div>
+    </ng-template>      
+</ngb-carousel>
