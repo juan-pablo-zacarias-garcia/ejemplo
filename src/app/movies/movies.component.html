@@ -1,11 +1,8 @@
 <h1>Movies</h1>
-
-<div>{{movies.page}}</div>
-
-<div *ngFor="let movie of movies.results">
-    <label>{{movie.title}}</label>
+<div *ngFor="let Usuario of Usuarios">
+    <label>{{Usuario.nombre}}</label>
 </div>
-
+<!-- 
 <ngb-carousel>
     <ng-template ngbSlide *ngFor="let movie of movies.results">
       <div class="wrapper">
@@ -16,4 +13,4 @@
         <p> {{movie.overview}} </p>
       </div>
     </ng-template>      
-</ngb-carousel>
+</ngb-carousel> -->
